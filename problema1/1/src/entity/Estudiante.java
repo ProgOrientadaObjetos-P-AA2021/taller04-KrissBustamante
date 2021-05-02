@@ -28,7 +28,12 @@ public class Estudiante {
 
     @Override
     public String toString() {
-        return String.format("Nombre: %s \nCalificación 1: %.2f \nCalificación 2: %.2f \nCalificación 3: %.2f \nPromedio: %.2f", nombre, calificacion1, calificacion2, calificacion3, promedio );
+        return String.format("Nombre: %s \n"
+                + "Calificación 1: %.2f \n"
+                + "Calificación 2: %.2f \n"
+                + "Calificación 3: %.2f \n"
+                + "Promedio: %.2f", getNombre(),getCalificacion1(),
+                getCalificacion2(),  getCalificacion3() ,getPromedio());
     }
 
     public String getNombre() {

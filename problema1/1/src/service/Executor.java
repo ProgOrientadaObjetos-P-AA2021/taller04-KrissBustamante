@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package service;
+
 import entity.Estudiante;
+
 /**
  *
  * @author bitxanax
@@ -17,8 +19,10 @@ public class Executor {
     public static void main(String[] args) {
         Estudiante estudiante = new Estudiante("Sebastian", 7, 8, 9);
         estudiante.calcularPromedio();
-        
-        System.out.println(estudiante.toString());
+        Estudiante estudiante2 = new Estudiante("Rene", 5, 8, 9);
+        estudiante2.calcularPromedio();
+        System.out.println(estudiante.toString() + "\n"
+                + estudiante2.toString());
     }
-    
+
 }
